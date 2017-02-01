@@ -36,6 +36,8 @@ return angular.module('angular-clipboard', [])
             } finally {
                 // Reset inline style
                 $document[0].body.style.webkitUserSelect = '';
+                $document[0].activeElement.blur();
+                node.blur();
             }
         }
 
